@@ -25,5 +25,5 @@ epc_data$DT <- strptime(epc_data$DT, format = "%Y-%m-%d %H:%M:%S", tz = "")
 
 png(filename = "./plot1.png", width = 480, height = 480, units = "px")
 hist(epc_data$Global_active_power, xlab = "Global Active Power (kilowatts)"
-     ,col = "red", main = "Global Active Power")
+     ,bty = "n", col = "red", main = "Global Active Power")
 dev.off()
